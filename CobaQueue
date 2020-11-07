@@ -1,0 +1,31 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package implementasi.queue;
+
+/**
+ *
+ * @author Outstanding Student
+ */
+    public class CobaQueue {
+     public static void main(String[]args){
+        Queue Q = new Queue();
+        Q.createEmpty();
+        Q.printQueue();
+        
+        System.out.println("======================");
+        
+        Q.add("E31200822", "Raynaldi", 100);
+        Q.add("E31200550", "Jokowi", 90);
+        Q.add("e31200551", "Prabowo", 89);
+        
+        Q.printQueue();
+        System.out.println("======================");
+        Q.del();
+        Q.del();
+        System.out.println("======================");
+    }
+}
+
